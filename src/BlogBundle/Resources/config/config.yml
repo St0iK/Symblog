@@ -1,0 +1,3 @@
+parameters:
+    # Blogger contact email address
+    blog.emails.contact_email: contact@email.com
