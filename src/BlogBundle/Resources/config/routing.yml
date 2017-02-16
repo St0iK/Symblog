@@ -1,4 +1,3 @@
-# src/Blogger/BlogBundle/Resources/config/routing.yml
 BlogBundle_homepage:
     pattern:  /
     defaults: { _controller: BlogBundle:Page:index }
@@ -23,3 +22,10 @@ BlogBundle_blog_show:
     requirements:
         _method:  GET
         id: \d+
+
+BlogBundle_comment_create:
+    pattern:  /comment/{blog_id}
+    defaults: { _controller: BlogBundle:Comment:create }
+    requirements:
+        _method:  POST
+        blog_id: \d+
